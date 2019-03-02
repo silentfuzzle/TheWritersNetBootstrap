@@ -12,7 +12,7 @@
         <title>The Writer's Net</title>
     </head>
     <body>
-        <nav class="navbar bg-dark navbar-expand-sm fixed-top">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar">
                     <span class="navbar-toggler-icon"></span>
@@ -23,25 +23,126 @@
                         <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
                     </ul>
                     <span class="navbar-text">
+                        <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" id="user-actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Display Name
+                            </button>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="user-actions">
+                                <a class="dropdown-item" href="#">My Library</a>
+                                <a class="dropdown-item" href="#">View Profile</a>
+                                <a class="dropdown-item" href="#">Edit Profile</a>
+                                <a class="dropdown-item" href="#">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </span>
+                    <!--<span class="navbar-text">
                         <a role="button" class="btn btn-success" data-toggle="modal" data-target="#login-modal">Login</a>
                     </span>
                     <span class="navbar-text text-white p-2"> or </span>
                     <span class="navbar-text">
                         <a role="button" class="btn btn-success" data-toggle="modal" data-target="#signup-modal">Signup</a>
-                    </span>
+                    </span>-->
                 </div>
             </div>
         </nav>
 
+        <div id="login-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <label for="login-username-input">Username</label>
+                                    <input type="text" class="form-control form-control-sm mr-1" id="login-username-input" placeholder="Username">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="login-password-input">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="login-password-input">
+                                </div>
+                            </div>
+                            <div class="form-row d-flex justify-content-end">
+                                    <a href="#">I forgot my password</a>
+                                    <button type="button" class="btn btn-secondary btn-sm ml-1" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success btn-sm ml-1">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="signup-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog modl-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Signup</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-8">
+                                    <label for="signup-username-input">Username</label>
+                                    <input type="text" class="form-control form-control-sm mr-1" id="signup-username-input" placeholder="Username">
+                                </div>
+                                <div class="form-group col-sm-8">
+                                    <label for="signup-email-input">Email</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="signup-email-input" placeholder="Email">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="signup-password-input">Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="signup-password-input">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="signup-password-confirm-input">Confirm Password</label>
+                                    <input type="password" class="form-control form-control-sm mr-1" id="signup-password-confirm-input">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-success btn-sm ml-1">Signup</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>The Writer's Net</h1>
+                        <h2>A website for reading, writing, and sharing non-linear fiction</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         <div class="container">
             <div class="row">
                 <div class="col">
-                   This is a test.
+                   <h2>About</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                   Test2
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus condimentum nulla et ultricies mattis. Sed bibendum quam in nibh tempor lobortis. Vivamus consectetur mauris ex, sit amet porttitor dolor fermentum et. Aliquam ornare justo vel tempor laoreet. In in eleifend nisi. Maecenas consectetur nec purus in mollis. Donec sit amet dolor fringilla, commodo sapien id, tempor enim. Integer ac eleifend ante. Donec dignissim, quam iaculis aliquet blandit, dui turpis placerat metus, in viverra ipsum sem id justo. Pellentesque tempus metus ut nisl placerat, sit amet pulvinar lectus rutrum. Nunc consequat purus sed libero rhoncus, in gravida turpis convallis. Duis dignissim ornare ipsum et dictum. Integer ipsum nulla, mattis ac volutpat vel, interdum a leo.</p>
+
+                    <p>Vivamus viverra velit sed gravida facilisis. Nam id elit sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur at dui eu nisi mollis ullamcorper ac porttitor diam. Praesent sagittis nulla porta dui venenatis fringilla. Curabitur augue tortor, efficitur non dolor ut, laoreet bibendum erat. Suspendisse potenti. Sed eleifend ipsum velit, non tempus metus vehicula vitae. Ut quis turpis id lectus interdum facilisis eget nec libero. Praesent ut mollis tortor, sit amet sagittis mauris.</p>
+                    
+                    <p>Donec fermentum semper est, ut dignissim ante consequat a. Quisque ornare cursus augue. Duis ut nibh eu risus pharetra pellentesque. Proin facilisis, nunc id gravida pellentesque, velit metus viverra elit, vel molestie elit erat nec sapien. Donec ac felis tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus nunc quam, accumsan quis varius vitae, luctus mattis enim. Fusce eget luctus tortor, a auctor eros. Donec eget consequat erat. In hac habitasse platea dictumst.</p>
+                    
+                    <p>Pellentesque pulvinar blandit semper. Aenean sapien sem, lobortis vel nibh ut, lobortis scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque feugiat sapien ac leo lacinia, sed feugiat urna ornare. Morbi non luctus nibh. Curabitur porttitor mattis sollicitudin. Mauris metus magna, fermentum id volutpat nec, lacinia in nisi. Fusce et risus mollis, pretium sapien ac, mollis elit. Mauris et interdum eros, at scelerisque velit. Quisque magna sem, fringilla sit amet accumsan in, auctor eget ipsum. Suspendisse potenti. Donec eu purus ultricies, mattis sem nec, ornare quam. Pellentesque viverra, neque at fringilla mattis, arcu nisl finibus lectus, in iaculis arcu ipsum in tortor. Morbi mollis sapien ut tempus fermentum. Nam dapibus lacus ut quam imperdiet finibus. Donec enim libero, semper lacinia dolor id, faucibus posuere nisl.</p>
+                    
+                    <p>Sed commodo elit vitae dolor ultricies ultrices. Donec nec venenatis nunc, vitae vehicula turpis. Sed in nisl a purus molestie suscipit eu sed est. Nullam feugiat turpis a ipsum molestie feugiat. Vivamus vitae nibh blandit est dignissim interdum. Nulla ac tincidunt velit. Nam bibendum tortor consequat, sollicitudin tortor id, semper tellus.</p>
                 </div>
             </div>
         </div>

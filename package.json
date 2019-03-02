@@ -1,5 +1,5 @@
 {
-  "name": "thewritersnetmerp",
+  "name": "thewritersnetbootstrap",
   "version": "1.0.0",
   "description": "A website for writing, sharing, and reading non-linear fiction",
   "main": "index.html",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/silentfuzzle/TheWritersNetMERP.git"
+    "url": "git+https://github.com/silentfuzzle/TheWritersNetBootstrap.git"
   },
   "author": "Emily Palmieri",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/silentfuzzle/TheWritersNetMERP/issues"
+    "url": "https://github.com/silentfuzzle/TheWritersNetBootstrap/issues"
   },
-  "homepage": "https://github.com/silentfuzzle/TheWritersNetMERP#readme",
+  "homepage": "https://github.com/silentfuzzle/TheWritersNetBootstrap#readme",
   "devDependencies": {
     "lite-server": "^2.2.2"
   },
