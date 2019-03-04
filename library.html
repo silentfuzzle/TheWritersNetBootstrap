@@ -19,7 +19,19 @@
                     <p>Donec fermentum semper est, ut dignissim ante consequat a. Quisque ornare cursus augue. Duis ut nibh eu risus pharetra pellentesque. Proin facilisis, nunc id gravida pellentesque, velit metus viverra elit, vel molestie elit erat nec sapien. Donec ac felis tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus nunc quam, accumsan quis varius vitae, luctus mattis enim. Fusce eget luctus tortor, a auctor eros. Donec eget consequat erat. In hac habitasse platea dictumst.</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-end">
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Keywords" aria-label="Keyword search" aria-describedby="search-filter">
+                            <div class="input-group-append">
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input id="search-filter" type="checkbox" checked autocomplete="off"> Filter Results
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                </div>
                 <div class="col-12">
                     <div class="table-responsive">
                         <table class="table table-striped">
@@ -34,15 +46,15 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th><a href="#">Book Title</a></th>
+                                    <th><a href="/books/view.html">Book Title</a></th>
                                     <td>Donec fermentum semper est</td>
                                     <td><a href="#">Book Author</a></td>
                                     <td>
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </td>
-                                    <td>Insert Rating</td>
+                                    <td>3.9/5</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -69,6 +81,8 @@
                 </div>
             </div>
         </div>
+        Insert footer
+
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
