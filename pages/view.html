@@ -43,7 +43,7 @@
 
         <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-bottom">
             <div class="container">
-                <div class="col-auto">
+                <div class="col-auto align-self-end">
                     <a class="navbar-brand" href="#">Book Title</a>
                     <button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#map" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         Toggle Map
@@ -60,7 +60,7 @@
                             <div class="col-auto">
                                 <p class="text-white">
                                     You've read 12 out of 25 pages. 
-                                    <a role="button" class="btn btn-success btn-sm" href="#">Restart</a>
+                                    <a class="btn btn-success btn-sm text-white" data-toggle="modal" data-target="#confirm-modal">Restart</a>
                                 </p>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                         </div>
                         <div class="row justify-content-around">
                             <div class="col-auto">
-                                <div class="dropdown">
+                                <div class="dropup">
                                     <button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Map Layout
                                     </button>
@@ -121,6 +121,49 @@
                 </div>
             </div>
         </nav>
+        
+        <div id="help-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Map Help</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Nullam vel augue augue. Duis volutpat molestie nulla, nec aliquam nisl. Donec a quam a lacus fringilla egestas non ut ante. Quisque ultricies, quam vitae scelerisque fermentum, metus dolor semper lectus, id facilisis turpis felis malesuada libero. Phasellus vulputate libero sit amet dui venenatis maximus. Donec non nisl imperdiet, bibendum tortor eget, pulvinar magna. Praesent condimentum elit quis libero feugiat, nec scelerisque ex placerat. Vestibulum ac imperdiet orci. Maecenas cursus augue non vestibulum consequat. Sed sit amet mattis libero, aliquet consequat est.</p>
+
+                        <p>Proin at tristique nisl, vehicula posuere erat. Donec sit amet metus massa. Morbi egestas semper ornare. Fusce volutpat interdum turpis, eget sagittis enim venenatis ac. Vestibulum tempus sit amet erat sit amet commodo. Ut iaculis ante magna, ac sagittis sapien sodales non. Nunc arcu odio, commodo non nunc eget, faucibus vestibulum ligula.</p>
+                    
+                        <div class="row justify-content-end">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="confirm-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Confirm Action</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to clear your progress and start over from the beginning?</p>
+                        
+                        <div class="row justify-content-end">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-success btn-sm">Restart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <header class="jumbotron">
             <div class="container">
