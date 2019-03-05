@@ -13,6 +13,37 @@
     <body>
         Insert navbar
 
+        <div id="review-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Review Book Title</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label class="col-6 col-sm-5 col-md-4 col-lg-3" for="review-rating-input">Rating (out of 5)</label>
+                                <input type="number" class="col-2 col-md-1 form-control form-control-sm mr-1" id="review-rating-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="review-title-input">Review Title</label>
+                                <input type="text" class="form-control form-control-sm mr-1" id="review-title-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="review-input">Review</label>
+                                <textarea class=" form-control form-control-sm mr-1" id="review-input" rows="5"></textarea>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-success btn-sm ml-1">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -41,7 +72,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <a class="btn btn-success btn-lg" href="#">Read Book</a>
+                    <a class="btn btn-success btn-lg" href="../pages/view.html">Read Book</a>
                 </div>
             </div>
             <div class="row justify-content-between">
@@ -49,7 +80,7 @@
                     <h2 id="reviews">19 Reviews</h2>
                 </div>
                 <div class="col-auto">
-                    <a class="btn btn-success btn-sm" href="#">Write Review</a>
+                    <a role="button" class="btn btn-success btn-sm text-white" data-toggle="modal" data-target="#review-modal">Write Review</a>
                 </div>
             </div>
             <div class="row">
