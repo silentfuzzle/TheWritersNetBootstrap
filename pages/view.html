@@ -12,104 +12,199 @@
         <title>Book Title</title>
     </head>
     <body>
-        Insert navbar
-        <div class="container">
-            <div class="row">
-                <ol class="col-12 breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">My Library</a></li>
-                    <li class="breadcrumb-item"><a href="#">Book Title</a></li>
-                    <li class="breadcrumb-item active">Page Title</li>
-                </ol>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col=auto">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-success">Previous</button>
-                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Previous Page Title</a>
-                            <a class="dropdown-item" href="#">Previous Previous Page Title</a>
-                            <a class="dropdown-item" href="#">Previous Previous Previous Page Title</a>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-bar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">The Writer's Net</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./library.html">Library</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" id="user-actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Display Name
+                            </button>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="user-actions">
+                                <a class="dropdown-item" href="#">My Library</a>
+                                <a class="dropdown-item" href="#">View Profile</a>
+                                <a class="dropdown-item" href="#">Edit Profile</a>
+                                <a class="dropdown-item" href="#">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <p>Page History</p>
-                </div>
-                <div class="col-auto">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-success">Next</button>
-                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Next Page Title</a>
-                            <a class="dropdown-item" href="#">Next Next Page Title</a>
-                            <a class="dropdown-item" href="#">Next Next Next Page Title</a>
-                        </div>
-                    </div>
+                    </span>
                 </div>
             </div>
-            <div class="row">
-                <p>Nullam vel augue augue. Duis volutpat molestie nulla, nec aliquam nisl. Donec a quam a lacus fringilla egestas non ut ante. Quisque ultricies, quam vitae scelerisque fermentum, metus dolor semper lectus, id facilisis turpis felis malesuada libero. Phasellus vulputate libero sit amet dui venenatis maximus. Donec non nisl imperdiet, bibendum tortor eget, pulvinar magna. Praesent condimentum elit quis libero feugiat, nec scelerisque ex placerat. Vestibulum ac imperdiet orci. Maecenas cursus augue non vestibulum consequat. Sed sit amet mattis libero, aliquet consequat est.</p>
+        </nav>
 
-                <p>Proin at tristique nisl, vehicula posuere erat. Donec sit amet metus massa. Morbi egestas semper ornare. Fusce volutpat interdum turpis, eget sagittis enim venenatis ac. Vestibulum tempus sit amet erat sit amet commodo. Ut iaculis ante magna, ac sagittis sapien sodales non. Nunc arcu odio, commodo non nunc eget, faucibus vestibulum ligula.</p>
-                
-                <p>Sed ornare nisl justo, vitae mattis ante efficitur id. Morbi congue nulla eu dictum suscipit. Cras non nunc quis sem lobortis imperdiet. Proin condimentum porta lorem. Proin congue ante sit amet dapibus volutpat. Proin mi felis, tempus quis bibendum vel, suscipit eget eros. Nam cursus, metus eget dapibus mattis, lectus ipsum vestibulum eros, et blandit enim magna nec turpis. Quisque auctor dignissim felis, eget scelerisque diam ornare at. Sed consequat libero nulla, sed fringilla felis semper sit amet. Morbi sit amet augue ultricies, posuere diam ut, egestas ante.</p>
-                
-                <p>Sed eros turpis, bibendum nec dapibus a, feugiat ut metus. Nunc in quam vitae ligula feugiat fringilla. Nullam ut mi vel nunc vestibulum posuere. Aliquam vehicula augue diam, ut fermentum odio ornare vitae. Aenean ac imperdiet nisl. Nulla euismod lobortis ante, sed tincidunt risus iaculis at. Fusce non tortor sit amet magna euismod blandit nec sit amet nibh. Nullam non nibh eget dolor laoreet volutpat. Pellentesque lacus sem, aliquam vel consectetur eu, scelerisque eget ante.</p>
-                
-                <p>Aenean laoreet ipsum metus, id cursus eros sollicitudin a. Sed mattis, arcu vitae pulvinar tempor, mi lorem pulvinar tortor, vitae porta purus lorem a mi. Aliquam efficitur felis sed turpis laoreet, vitae porttitor ante interdum. Quisque eget laoreet massa, eu aliquam eros. Nulla justo ex, egestas a sem nec, auctor suscipit magna. Nulla nec faucibus lacus. Nam non sapien risus. Fusce ut finibus mi.</p>
-                
-                <p>Sed sagittis lacinia interdum. Curabitur tincidunt, arcu at sodales viverra, dui mauris semper orci, vel faucibus est lectus a lacus. Quisque quis porta tellus. Quisque tempus erat diam. Phasellus quis dictum lacus, nec maximus mi. Vestibulum gravida gravida enim sed elementum. Nam congue purus at est pharetra sagittis quis in urna. Vestibulum varius nunc at fermentum porttitor. Suspendisse efficitur purus eget augue posuere, a finibus risus vulputate. Nam porttitor consectetur accumsan. Nullam quis elit mattis, imperdiet velit eget, mollis massa. Suspendisse neque dui, tristique nec ultrices non, semper id dolor. Nam et rutrum lectus, mollis cursus purus. Nullam ullamcorper ac sem sed faucibus. Cras convallis ullamcorper suscipit. Nam tempus velit at nisi auctor finibus.</p>
-                
-                <p>Proin a nibh sit amet justo mattis tincidunt. Sed tincidunt enim convallis, tincidunt leo a, tincidunt nisi. Vivamus ligula erat, varius at interdum vitae, scelerisque ac nisi. Phasellus pellentesque condimentum nibh vitae efficitur. Etiam commodo interdum malesuada. Vivamus vel ultricies ex. Nulla facilisi. Nam commodo, neque ac egestas luctus, odio sem laoreet sapien, non posuere dolor tellus non est. Fusce posuere fringilla finibus. Mauris fermentum pulvinar diam faucibus imperdiet.</p>
-                
-                <p>Suspendisse vitae pulvinar mi. Praesent interdum leo magna, quis suscipit magna laoreet a. Nunc et varius odio. Nam nisl justo, scelerisque nec est sed, varius ultricies ligula. Etiam blandit lectus libero, sit amet fringilla lacus rhoncus sed. Sed vulputate vel dolor a vestibulum. Suspendisse porta id dui iaculis tincidunt. Nam rhoncus risus pulvinar sem lacinia, vel interdum nibh blandit. Donec porttitor sem et ultricies tristique. Suspendisse placerat elementum nunc non aliquam. Donec elementum eros et pulvinar elementum. Ut vitae nibh lorem.</p>
-            </div>
-            
-            <div class="row justify-content-center">
-                <div class="col=auto">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-success">Previous</button>
-                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Previous Page Title</a>
-                            <a class="dropdown-item" href="#">Previous Previous Page Title</a>
-                            <a class="dropdown-item" href="#">Previous Previous Previous Page Title</a>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-bottom">
+            <div class="container">
+                <div class="col-auto">
+                    <a class="navbar-brand" href="#">Book Title</a>
+                    <button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#map" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        Toggle Map
+                    </button>
+                </div>
+                <div class="col">
+                    <div class="collapse" id="map">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="text-white">Book Navigation</h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <p class="text-white">
+                                    You've read 12 out of 25 pages. 
+                                    <a role="button" class="btn btn-success btn-sm" href="#">Restart</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <img class="d-block img-fluid" src="../img/layout-test-map.png" alt="map" height="500" width="500">
+                            </div>
+                        </div>
+                        <div class="row justify-content-around">
+                            <div class="col-auto">
+                                <div class="dropdown">
+                                    <button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Map Layout
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Force Directed</a>
+                                        <a class="dropdown-item" href="#">Rainbow Graph</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <a class="btn btn-success btn-sm text-white" data-toggle="modal" data-target="#help-modal">Help</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-success btn-sm">Previous</button>
+                                <button type="button" class="btn btn-success btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Previous Page Title</a>
+                                    <a class="dropdown-item" href="#">Previous Previous Page Title</a>
+                                    <a class="dropdown-item" href="#">Previous Previous Previous Page Title</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <p class="text-white">Page History</p>
+                        </div>
+                        <div class="col-auto">
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn btn-success btn-sm">Next</button>
+                                <button type="button" class="btn btn-success btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Next Page Title</a>
+                                    <a class="dropdown-item" href="#">Next Next Page Title</a>
+                                    <a class="dropdown-item" href="#">Next Next Next Page Title</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-auto">
-                    <p>Page History</p>
-                </div>
-                <div class="col-auto">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-success">Next</button>
-                        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Next Page Title</a>
-                            <a class="dropdown-item" href="#">Next Next Page Title</a>
-                            <a class="dropdown-item" href="#">Next Next Next Page Title</a>
-                        </div>
+            </div>
+        </nav>
+
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Book Title</h1>
+                        <h2>Donec fermentum semper est</h2>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <a role="button" href="#" class="btn btn-success">Return to Start</a>
+        </header>
+
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Navigation</h3>
+                </div>
+                <ul class="list-unstyled components">
+                    <p>Dummy Heading</p>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="#">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <ol class="col-12 breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">My Library</a></li>
+                        <li class="breadcrumb-item"><a href="#">Book Title</a></li>
+                        <li class="breadcrumb-item active">Page Title</li>
+                    </ol>
+                </div>
+                <div class="row">
+                    <p>Nullam vel augue augue. Duis volutpat molestie nulla, nec aliquam nisl. Donec a quam a lacus fringilla egestas non ut ante. Quisque ultricies, quam vitae scelerisque fermentum, metus dolor semper lectus, id facilisis turpis felis malesuada libero. Phasellus vulputate libero sit amet dui venenatis maximus. Donec non nisl imperdiet, bibendum tortor eget, pulvinar magna. Praesent condimentum elit quis libero feugiat, nec scelerisque ex placerat. Vestibulum ac imperdiet orci. Maecenas cursus augue non vestibulum consequat. Sed sit amet mattis libero, aliquet consequat est.</p>
+    
+                    <p>Proin at tristique nisl, vehicula posuere erat. Donec sit amet metus massa. Morbi egestas semper ornare. Fusce volutpat interdum turpis, eget sagittis enim venenatis ac. Vestibulum tempus sit amet erat sit amet commodo. Ut iaculis ante magna, ac sagittis sapien sodales non. Nunc arcu odio, commodo non nunc eget, faucibus vestibulum ligula.</p>
+                    
+                    <p>Sed ornare nisl justo, vitae mattis ante efficitur id. Morbi congue nulla eu dictum suscipit. Cras non nunc quis sem lobortis imperdiet. Proin condimentum porta lorem. Proin congue ante sit amet dapibus volutpat. Proin mi felis, tempus quis bibendum vel, suscipit eget eros. Nam cursus, metus eget dapibus mattis, lectus ipsum vestibulum eros, et blandit enim magna nec turpis. Quisque auctor dignissim felis, eget scelerisque diam ornare at. Sed consequat libero nulla, sed fringilla felis semper sit amet. Morbi sit amet augue ultricies, posuere diam ut, egestas ante.</p>
+                    
+                    <p>Sed eros turpis, bibendum nec dapibus a, feugiat ut metus. Nunc in quam vitae ligula feugiat fringilla. Nullam ut mi vel nunc vestibulum posuere. Aliquam vehicula augue diam, ut fermentum odio ornare vitae. Aenean ac imperdiet nisl. Nulla euismod lobortis ante, sed tincidunt risus iaculis at. Fusce non tortor sit amet magna euismod blandit nec sit amet nibh. Nullam non nibh eget dolor laoreet volutpat. Pellentesque lacus sem, aliquam vel consectetur eu, scelerisque eget ante.</p>
+                    
+                    <p>Aenean laoreet ipsum metus, id cursus eros sollicitudin a. Sed mattis, arcu vitae pulvinar tempor, mi lorem pulvinar tortor, vitae porta purus lorem a mi. Aliquam efficitur felis sed turpis laoreet, vitae porttitor ante interdum. Quisque eget laoreet massa, eu aliquam eros. Nulla justo ex, egestas a sem nec, auctor suscipit magna. Nulla nec faucibus lacus. Nam non sapien risus. Fusce ut finibus mi.</p>
+                    
+                    <p>Sed sagittis lacinia interdum. Curabitur tincidunt, arcu at sodales viverra, dui mauris semper orci, vel faucibus est lectus a lacus. Quisque quis porta tellus. Quisque tempus erat diam. Phasellus quis dictum lacus, nec maximus mi. Vestibulum gravida gravida enim sed elementum. Nam congue purus at est pharetra sagittis quis in urna. Vestibulum varius nunc at fermentum porttitor. Suspendisse efficitur purus eget augue posuere, a finibus risus vulputate. Nam porttitor consectetur accumsan. Nullam quis elit mattis, imperdiet velit eget, mollis massa. Suspendisse neque dui, tristique nec ultrices non, semper id dolor. Nam et rutrum lectus, mollis cursus purus. Nullam ullamcorper ac sem sed faucibus. Cras convallis ullamcorper suscipit. Nam tempus velit at nisi auctor finibus.</p>
+                    
+                    <p>Proin a nibh sit amet justo mattis tincidunt. Sed tincidunt enim convallis, tincidunt leo a, tincidunt nisi. Vivamus ligula erat, varius at interdum vitae, scelerisque ac nisi. Phasellus pellentesque condimentum nibh vitae efficitur. Etiam commodo interdum malesuada. Vivamus vel ultricies ex. Nulla facilisi. Nam commodo, neque ac egestas luctus, odio sem laoreet sapien, non posuere dolor tellus non est. Fusce posuere fringilla finibus. Mauris fermentum pulvinar diam faucibus imperdiet.</p>
+                    
+                    <p>Suspendisse vitae pulvinar mi. Praesent interdum leo magna, quis suscipit magna laoreet a. Nunc et varius odio. Nam nisl justo, scelerisque nec est sed, varius ultricies ligula. Etiam blandit lectus libero, sit amet fringilla lacus rhoncus sed. Sed vulputate vel dolor a vestibulum. Suspendisse porta id dui iaculis tincidunt. Nam rhoncus risus pulvinar sem lacinia, vel interdum nibh blandit. Donec porttitor sem et ultricies tristique. Suspendisse placerat elementum nunc non aliquam. Donec elementum eros et pulvinar elementum. Ut vitae nibh lorem.</p>
                 </div>
             </div>
         </div>
-        Insert footer
+        
+        <footer class="bg-dark text-white pt-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>&copy;2019 The Writer's Net</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+
+            });
+        </script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-    padding: 70px 0px 0px 0px;
+    padding: 70px 0px 55px 0px;
     z-index: 0;
 }
 
@@ -9,4 +9,19 @@ body {
 
 .dropdown-item:hover {
     background-color: transparent;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+#sidebar.active {
+    margin-left: -250px;
 }
