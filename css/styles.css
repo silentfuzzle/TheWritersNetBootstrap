@@ -30,6 +30,7 @@ body {
     z-index: 999;
 }
 
-#sidebar.active {
-    margin-left: -520px;
+.table-hack {
+    height: 200px; 
+    overflow: auto;
 }

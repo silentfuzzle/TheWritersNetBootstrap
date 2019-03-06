@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http=equiv="x-ua-compatible" content="ie=edge">
+        
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <title>The Writer's Net - Edit Book</title>
+    </head>
+    <body>
+        Insert navbar
+        <div class="container">
+            <div class="row">
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item"><a href="../my-library.html">My Library</a></li>
+                    <li class="breadcrumb-item active">Edit Book</li>
+                </ol>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>Edit Book</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="title-input">Title</label>
+                            <input type="text" class="form-control form-control-sm mr-1" id="title-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="short-desc-input">Short Description</label>
+                            <input type="text" class="form-control form-control-sm mr-1" id="short-desc-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="description-input">Description</label>
+                            <textarea class=" form-control form-control-sm mr-1" id="description-input" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="visibility">Visibility</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="visibility" id="public" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Public (Anyone can view this book)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="visibility" id="private">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Private (You choose who can view this book)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-success btn-sm ml-auto">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <h3 class="card-header">Viewers</h3>
+                        <div class="card-body">
+                            <div class="table-hack">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th><a href="#">Viewer Display Name</a></th>
+                                            <td><a href="#">Remove</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">Viewer Display Name</a></th>
+                                            <td><a href="#">Remove</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">Viewer Display Name</a></th>
+                                            <td><a href="#">Remove</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">Viewer Display Name</a></th>
+                                            <td><a href="#">Remove</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">Viewer Display Name</a></th>
+                                            <td><a href="#">Remove</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <form>
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <label class="sr-only" for="viewer-input">Enter Viewer</label>
+                                        <input type="text" class="form-control form-control-sm" id="viewer-input">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-success btn-sm">Add Viewer</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+            
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <h3 class="card-header">Co-Authors</h3>
+                        <div class="card-body">
+                            <div class="table-hack">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th><a href="#">Co-Author Display Name</a></th>
+                                            <td><a href="#">Remove</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">Co-Author Display Name</a></th>
+                                            <td><a href="#">Remove</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">Co-Author Display Name</a></th>
+                                            <td><a href="#">Remove</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">Co-Author Display Name</a></th>
+                                            <td><a href="#">Remove</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th><a href="#">Co-Author Display Name</a></th>
+                                            <td><a href="#">Remove</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <form>
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <label class="sr-only" for="viewer-input">Enter Co-Author</label>
+                                        <input type="text" class="form-control form-control-sm" id="viewer-input">
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="button" class="btn btn-success btn-sm">Add Co-Author</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        Insert footer
+        <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
