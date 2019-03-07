@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http=equiv="x-ua-compatible" content="ie=edge">
+        
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+
+        <title>The Writer's Net - Edit Section</title>
+    </head>
+    <body>
+        Insert navbar
+
+        <div id="help-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Markdown Help</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            <li>Proin in enim ac est consectetur dapibus.</li>
+                            <li>Phasellus tincidunt urna luctus faucibus scelerisque.</li>
+                            <li>In sit amet lorem vitae enim posuere condimentum.</li>
+                            <li>Donec mollis ex ac lacinia varius.</li>
+                            <li>Proin id magna a mi rutrum accumsan vel et nisl.</li>
+                            <li>Donec quis libero molestie, vestibulum massa ac, accumsan magna.</li>
+                            <li>Duis faucibus mi et risus fermentum euismod.</li>
+                            <li>Phasellus aliquet nunc in lorem luctus efficitur id ac neque.</li>
+                            <li>Donec fermentum libero a ligula faucibus, a finibus orci ultricies.</li>
+                        </ul>                        
+                        <div class="row justify-content-end">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item"><a href="../my-library.html">My Library</a></li>
+                    <li class="breadcrumb-item"><a href="../books/edit.html">Edit Book</a></li>
+                    <li class="breadcrumb-item"><a href="../pages/edit.html">Edit Page</a></li>
+                    <li class="breadcrumb-item active">Edit Section</li>
+                </ol>
+            </div>
+
+            <div class="row">
+                <div class="col-auto">
+                    <h1>Edit Section</h1>
+                </div>
+                <div class="col-auto">
+                    <a class="btn btn-success" href="#">Create New Section</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="title-input">Title</label>
+                            <input type="text" class="form-control form-control-sm mr-1" id="title-input">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="start-input">
+                            <label class="form-check-label" for="start-input">
+                                Display Title
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="content-input">Content</label>
+                            <textarea class="form-control" id="content-input" rows="10"></textarea>
+                            <a href="#" data-toggle="modal" data-target="#help-modal">Markdown Help</a>
+                        </div>
+                        <div class="form-row">
+                            <a class="btn btn-success btn-sm ml-auto" href="./view.html">View Section</a>
+                            <button type="button" class="btn btn-success btn-sm ml-2">Save</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col align-self-center">
+                    <div class="form-group">
+                        <label for="page-input">Generate Page Link</label>
+                        <select id="page-input" class="form-control form-control-sm">
+                            <option>Page Title 1</option>
+                            <option>Page Title 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-row justify-content-end">
+                        <button class="btn btn-success btn-sm" type="button">Generate</button>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" class="form-control form-control-sm" placeholder="Shortcode appears here." readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        Insert footer
+        <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
