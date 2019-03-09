@@ -12,7 +12,34 @@
         <title>The Writer's Net - Edit Section</title>
     </head>
     <body>
-        Insert navbar
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">The Writer's Net</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-bar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="../library.html">Library</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" id="user-actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Display Name
+                            </button>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="user-actions">
+                                <a class="dropdown-item" href="../my-library.html">My Library</a>
+                                <a class="dropdown-item" href="../profiles/view.html">View Profile</a>
+                                <a class="dropdown-item" href="../profiles/edit.html">Edit Profile</a>
+                                <a class="dropdown-item" href="../settings.html">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../index.html">Logout</a>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </nav>
 
         <div id="help-modal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
@@ -80,9 +107,11 @@
                             <textarea class="form-control" id="content-input" rows="10"></textarea>
                             <a href="#" data-toggle="modal" data-target="#help-modal">Markdown Help</a>
                         </div>
-                        <div class="form-row">
-                            <a class="btn btn-success btn-sm ml-auto" href="./view.html">View Section</a>
-                            <button type="button" class="btn btn-success btn-sm ml-2">Save</button>
+                        <div class="form-group row justify-content-end">
+                            <div class="col-auto">
+                                <a class="btn btn-success btn-sm" href="./view.html">View Section</a>
+                                <button type="button" class="btn btn-success btn-sm">Save</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -95,16 +124,28 @@
                         </select>
                     </div>
                     <div class="form-group form-row justify-content-end">
-                        <button class="btn btn-success btn-sm" type="button">Generate</button>
+                        <div class="col-auto">
+                            <button class="btn btn-success btn-sm" type="button">Generate</button>
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <input type="text" class="form-control form-control-sm" placeholder="Shortcode appears here." readonly>
+                    <div class="form-group">
+                        <label class="sr-only" for="shortcode-input">Shortcode appears here</label>
+                        <input type="text" class="form-control form-control-sm" id="shortcode-input" placeholder="Shortcode appears here." readonly>
                     </div>
                 </div>
             </div>
         </div>
 
-        Insert footer
+        <footer class="bg-dark text-white pt-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>&copy;2019 The Writer's Net</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

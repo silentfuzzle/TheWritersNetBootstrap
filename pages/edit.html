@@ -12,7 +12,34 @@
         <title>The Writer's Net - Edit Page</title>
     </head>
     <body>
-        Insert navbar
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">The Writer's Net</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-bar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="../library.html">Library</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" id="user-actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Display Name
+                            </button>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="user-actions">
+                                <a class="dropdown-item" href="../my-library.html">My Library</a>
+                                <a class="dropdown-item" href="../profiles/view.html">View Profile</a>
+                                <a class="dropdown-item" href="../profiles/edit.html">Edit Profile</a>
+                                <a class="dropdown-item" href="../settings.html">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../index.html">Logout</a>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </nav>
 
         <div id="confirm-delete-modal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
@@ -65,8 +92,10 @@
                                 Start Page
                             </label>
                         </div>
-                        <div class="form-row">
-                            <button type="button" class="btn btn-success btn-sm ml-auto">Save</button>
+                        <div class="form-group row justify-content-end">
+                            <div class="col-auto">
+                                <button type="button" class="btn btn-success btn-sm">Save</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -81,9 +110,9 @@
                 <div class="col-12">
                     <div class="table-responsive">
                         <table class="table table-hover">
-                            <col width="20%">
+                            <col width="25%">
                             <col width="50%">
-                            <col width="30%">
+                            <col width="25%">
                             <thead class="thead-dark">
                                 <tr>
                                     <th><a href="#">Title</a></th>
@@ -93,19 +122,19 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th>Section Title 1</th>
+                                    <th><a href="../sections/view.html">Section Title 1</a></th>
                                     <td>Nullam vel augue augue. Duis volutpat molestie nulla, nec aliquam nisl. Donec a quam a lacus frin...</td>
-                                    <td><a href="../sections/edit.html">Edit</a> | <a href="../sections/view.html">View</a> | <a href="#" data-toggle="modal" data-target="#confirm-delete-modal">Delete</a> | <a href="#">Remove</a></td>
+                                    <td><a href="../sections/edit.html">Edit</a> | <a href="#" data-toggle="modal" data-target="#confirm-delete-modal">Delete</a> | <a href="#">Remove</a></td>
                                 </tr>
                                 <tr>
-                                    <th>Section Title 2</th>
+                                    <th><a href="../sections/view.html">Section Title 2</a></th>
                                     <td>Nullam vel augue augue. Duis volutpat molestie nulla, nec aliquam nisl. Donec a quam a lacus frin...</td>
-                                    <td><a href="../sections/edit.html">Edit</a> | <a href="../sections/view.html">View</a> | <a href="#" data-toggle="modal" data-target="#confirm-delete-modal">Delete</a> | <a href="#">Remove</a></td>
+                                    <td><a href="../sections/edit.html">Edit</a> | <a href="#" data-toggle="modal" data-target="#confirm-delete-modal">Delete</a> | <a href="#">Remove</a></td>
                                 </tr>
                                 <tr>
-                                    <th>Section Title 3</th>
+                                    <th><a href="../sections/view.html">Section Title 3</a></th>
                                     <td>Nullam vel augue augue. Duis volutpat molestie nulla, nec aliquam nisl. Donec a quam a lacus frin...</td>
-                                    <td><a href="../sections/edit.html">Edit</a> | <a href="../sections/view.html">View</a> | <a href="#" data-toggle="modal" data-target="#confirm-delete-modal">Delete</a> | <a href="#">Remove</a></td>
+                                    <td><a href="../sections/edit.html">Edit</a> | <a href="#" data-toggle="modal" data-target="#confirm-delete-modal">Delete</a> | <a href="#">Remove</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -134,13 +163,23 @@
                     <a class="btn btn-success btn-sm" href="../sections/edit.html">Add New Section</a>
                 </div>
             </div>
-            <div class="row justify-content-end">
+            <div class="row justify-content-end pb-3">
                 <div class="col-auto">
                     <a class="btn btn-success" href="./view.html">View Page</a>
                 </div>
             </div>
         </div>
-        Insert footer
+        
+        <footer class="bg-dark text-white pt-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>&copy;2019 The Writer's Net</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

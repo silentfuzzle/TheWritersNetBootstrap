@@ -11,7 +11,34 @@
         <title>The Writer's Net - Book Title</title>
     </head>
     <body>
-        Insert navbar
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">The Writer's Net</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-bar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="../library.html">Library</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" id="user-actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Display Name
+                            </button>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="user-actions">
+                                <a class="dropdown-item" href="../my-library.html">My Library</a>
+                                <a class="dropdown-item" href="../profiles/view.html">View Profile</a>
+                                <a class="dropdown-item" href="../profiles/edit.html">Edit Profile</a>
+                                <a class="dropdown-item" href="../settings.html">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../index.html">Logout</a>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </nav>
 
         <div id="review-modal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
@@ -34,9 +61,11 @@
                                 <label for="review-input">Review</label>
                                 <textarea class=" form-control form-control-sm mr-1" id="review-input" rows="5"></textarea>
                             </div>
-                            <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-success btn-sm ml-1">Submit</button>
+                            <div class="form-group row justify-content-end">
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success btn-sm">Submit</button>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -48,7 +77,7 @@
             <div class="row">
                 <div class="col">
                     <h1>Book Title</h1>
-                    <h2>by <a href="#">Book Author</a></h2>
+                    <h2>by <a href="../profiles/view.html">Book Author</a></h2>
                     <p class="lead">Donec fermentum semper est</p>
                 </div>
             </div>
@@ -105,7 +134,7 @@
             <div class="row">
                 <div class="col">
                     <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                    <p>--<a href="#">Display Name</a></p>
+                    <p>--<a href="../profiles/view.html">Display Name</a></p>
                 </div>
             </div>
             <div class="row">
@@ -131,7 +160,16 @@
             </div>
         </div>
 
-        Insert footer        
+        <footer class="bg-dark text-white pt-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>&copy;2019 The Writer's Net</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

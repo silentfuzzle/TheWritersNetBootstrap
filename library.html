@@ -11,7 +11,35 @@
         <title>The Writer's Net - Library</title>
     </head>
     <body>
-        Insert Navbar
+        <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">The Writer's Net</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-bar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="library.html">Library</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" id="user-actions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Display Name
+                            </button>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="user-actions">
+                                <a class="dropdown-item" href="my-library.html">My Library</a>
+                                <a class="dropdown-item" href="/profiles/view.html">View Profile</a>
+                                <a class="dropdown-item" href="/profiles/edit.html">Edit Profile</a>
+                                <a class="dropdown-item" href="settings.html">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="index.html">Logout</a>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -48,7 +76,7 @@
                                 <tr>
                                     <th><a href="/books/view.html">Book Title</a></th>
                                     <td>Donec fermentum semper est</td>
-                                    <td><a href="#">Book Author</a></td>
+                                    <td><a href="/profiles/view.html">Book Author</a></td>
                                     <td>
                                         <div class="progress">
                                             <div class="progress-bar bg-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -81,7 +109,16 @@
                 </div>
             </div>
         </div>
-        Insert footer
+        
+        <footer class="bg-dark text-white pt-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>&copy;2019 The Writer's Net</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
